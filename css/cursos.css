@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #332823;
+    --secondary-color: #6c4939;
+    --tertiary-color: #915339;
+    --background-color: #bda587;
+    --button-color: #b55620;
+}
+/* Navbar */
+.nav-container {
+    justify-content: space-between;
+    padding: 10px 140px;
+    position: fixed;
+    top: 0;
+    width: 99vw;
+    z-index: 1;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+/* Links */
+.link-container a {
+    display: flex;
+    align-items: center;
+}
+
+/* Cards */
+.div-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 120px 0;
+    margin-bottom: 20px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.4);
+}
+.div-card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    display: flex;
+    width: 700px;
+    height: 350px;
+}
+.img-card {
+    width: 350px;
+    height: auto;
+}
+.img-card img {
+    border-radius: 10px 0 0 10px;
+    max-width: 350px;
+    height: auto;
+}
+.card-body {
+    width: 350px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-card-container {
+    width: 100%;
+}
+.text-card-container h5 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.text-card-container p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .nav-container {
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 1;
+    }
+    .div-container {
+        margin-top: 110px;
+        margin-bottom: 20px;
+    }
+    .card {
+        width: 380px;
+        height: 760px;
+    }
+    .div-card {
+        width: 380px;
+        height: 760px;
+        flex-direction: column !important;
+    }
+    .img-card img {
+        max-width: 380px;
+        border-radius: 10px 10px 0 0;
+    }
+    .text-card-container {
+        width: 100%;
+        height: 100%;
+    }
+    .card-body {
+        width: 100%;
+        min-height: 380px;
+    }
+    .card-body h5 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .card-title {
+        padding: 20px;
+    }
+    .card-body p {
+        font-size: 16px;
+    }
+}
