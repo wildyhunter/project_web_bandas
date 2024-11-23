@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+:root {
+    --primary-color: #332823;
+    --secondary-color: #6c4939;
+    --tertiary-color: #915339;
+    --background-color: #bda587;
+    --button-color: #b55620;
+}
+/* Container */
+.div-container-ev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 140px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    width: 85vw;
+    height: auto;
+    z-index: 0;
+}
+
+/* Section Eventos */
+.evento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+.box-container {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img-container-ev {
+    width: 50%;
+}
+.img-container-ev img {
+    width: 100%;
+    box-shadow: 1px -1px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0 0 10px;
+}
+.text-container-ev {
+    width: 50%;
+    padding: 10px;
+}
+.text-container-ev h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.text-container-ev h2 {
+    margin-bottom: 5px;
+    width: 70%;
+}
+.text-container-ev button {
+    margin-bottom: 30px;
+    background-color: var(--button-color);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+#text-event {
+    padding: 20px;
+}
+
+.text-container-ev p {
+    text-align: justify;
+}
+#horario {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Section Sessão */
+.line-es {
+    margin: 15px auto;
+    width: 98%;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    widows: 90%;
+    background-color: var(--button-color);
+    opacity: 1;
+}
+#sessao {
+    width: 100%;
+}
+#sessao h1 {
+    margin: 20px;
+    font-size: 30px;
+}
+.box-sessao-container {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#data-sessao {
+    text-align: center;
+    width: 50px;
+    border: 1px solid rgb(201, 201, 201);
+}
+#mes {
+    background-color: var(--button-color);
+    color: white;
+    padding: 4px;
+}
+#dia {
+    font-size: 40px;
+}
+#text-sessao {
+    width: 100%;
+}
+#text-sessao h3 {
+    padding-left: 20px;
+    font-size: 26px;
+}
+#text-sessao h4 {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#btn-comprar {
+    text-align: center;
+    font-size: 18px;
+}
+#btn-comprar button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .div-container-ev {
+        width: 96vw;
+        padding-bottom: 10px;
+        margin-top: 110px;
+    }
+    .evento-container {
+        margin-top: 10px;
+    }
+    .img-container-ev {
+        margin: 0 auto;
+        width: 98%;
+    }
+    .img-container-ev img {
+        border-radius: 10px;
+    }
+
+    .box-container {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .text-container-ev {
+        width: 98%;
+        padding: 0 10px;
+    }
+    .text-container-ev h2 {
+        width: 100%;
+    }
+    .text-container-ev button {
+        margin: 20px 0;
+    }
+    #text-event {
+        padding: 0 20px;
+    }
+    .box-sessao-container {
+        flex-direction: column;
+    }
+    #text-sessao h3 {
+        font-size: 20px;
+    }
+    #btn-comprar {
+        padding: 20px 0;
+    }
+    #btn-comprar button {
+        width: 100%;
+    }
+    .line-es {
+        margin-top: 0px!important;
+    }
+}

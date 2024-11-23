@@ -27,6 +27,9 @@
         <!-- CSS -->
         <link rel="stylesheet" href="../css/Home.css" />
         <link rel="stylesheet" href="../css/home_mobile.css" />
+        <link rel="stylesheet" href="../css/cursos.css" />
+        <link rel="stylesheet" href="../css/eventos.css" />
+
         <title>Wildy School</title>
     </head>
     <body>
@@ -44,13 +47,32 @@
                     <div class="line" id="line2"></div>
                     <div class="line" id="line3"></div>
                 </div>
-
                 <aside class="sidebar">
                     <nav>
                         <ul class="menu">
                             <li class="menu-item">
                                 <a href="../index.html" class="menu-link"
                                     >Home</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="../pages/escola.html" class="menu-link"
+                                    >Cursos</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="../pages/escola.html" class="menu-link"
+                                    >Escola</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Eventos</a>
+                            </li>
+                            <li class="menu-item">
+                                <a
+                                    href="../pages/contactos.html"
+                                    class="menu-link"
+                                    >Contactos</a
                                 >
                             </li>
                         </ul>
@@ -61,13 +83,79 @@
             <div class="link-container">
                 <ul>
                     <li class="link">
-                        <a href="../index.html">página inicial</a>
+                        <a href="../index.html"
+                            ><i class="fas fa-arrow-circle-left fs-4 p-2"></i
+                            >página inicial</a
+                        >
                     </li>
                 </ul>
             </div>
         </nav>
         <main class="main-comtainer">
-            <!-- Conteudo central -->
+            <div class="div-container-ev">
+                <section class="evento-container">
+                    <div class="box-container">
+                        <div class="img-container-ev">
+                            <img
+                                src="../img/banda/imagem_banda.jpg"
+                                alt="bandatxi"
+                            />
+                        </div>
+                        <div class="text-container-ev">
+                            <h1>🎸 SHOW AO VIVO: Txi Tá Demais 🎤</h1>
+                            <h2>
+                                🔥 A banda de alunos do 12º ano da Wildy School
+                                está de volta!
+                            </h2>
+                            <button>TEATRO</button>
+                            <ul id="text-event">
+                                <li>
+                                    <p>
+                                        Não perca o show exclusivo da Txi Tá
+                                        Demais, a banda formada pelos nossos
+                                        talentosos alunos do 12º ano. Prepare-se
+                                        para uma noite de muito rock, pop e
+                                        energia pura!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Venha prestigiar o talento e a dedicação
+                                        dos nossos músicos e celebrar a música
+                                        ao vivo com a gente.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p><b>Classificação:</b> 16 Anos</p>
+                            <p id="horario">⏰ Horário: 20:00h</p>
+                        </div>
+                    </div>
+                    <div id="sessao">
+                        <h1>Sessões</h1>
+                        <hr class="line-es" />
+                    </div>
+                    <div class="box-sessao-container">
+                        <div id="box-title" style="display: flex;">
+                            <div id="data-sessao">
+                                <div>
+                                    <p id="mes">NOV</p>
+                                    <h1 id="dia">29</h1>
+                                    <p id="semana">SEX</p>
+                                </div>
+                            </div>
+                            <div id="text-sessao">
+                                <h3>Teatro Municipal do Porto</h3>
+                                <h4>Praça D. João I</h4>
+                            </div>
+                        </div>
+                        <div id="btn-comprar">
+                            <button>Comprar</button>
+                            <p>13.00€ a 17.00€</p>
+                        </div>
+                    </div>
+                    <hr class="line-es" style="margin: 25px 0; width: 98%" />
+                </section>
+            </div>
         </main>
         <footer class="footer-container">
             <div id="img-footer">
@@ -81,9 +169,7 @@
                 <a class="footer-link" href="../pages/escola.html"
                     >Escola&nbsp; /</a
                 >
-                <a class="footer-link" href="#"
-                    >Eventos&nbsp; /</a
-                >
+                <a class="footer-link" href="#">Eventos&nbsp; /</a>
                 <a class="footer-link" href="../pages/contactos.html"
                     >Contactos</a
                 >
