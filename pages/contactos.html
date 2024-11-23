@@ -27,6 +27,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="../css/Home.css" />
         <link rel="stylesheet" href="../css/home_mobile.css" />
+        <link rel="stylesheet" href="../css/cursos.css" />
+        <link rel="stylesheet" href="../css/contacto.css" />
         <title>Wildy School</title>
     </head>
     <body>
@@ -44,7 +46,6 @@
                     <div class="line" id="line2"></div>
                     <div class="line" id="line3"></div>
                 </div>
-
                 <aside class="sidebar">
                     <nav>
                         <ul class="menu">
@@ -52,6 +53,26 @@
                                 <a href="../index.html" class="menu-link"
                                     >Home</a
                                 >
+                            </li>
+                            <li class="menu-item">
+                                <a href="../pages/escola.html" class="menu-link"
+                                    >Cursos</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="../pages/escola.html" class="menu-link"
+                                    >Escola</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a
+                                    href="../pages/eventos.html"
+                                    class="menu-link"
+                                    >Eventos</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Contactos</a>
                             </li>
                         </ul>
                     </nav>
@@ -61,13 +82,75 @@
             <div class="link-container">
                 <ul>
                     <li class="link">
-                        <a href="../index.html">página inicial</a>
+                        <a href="../index.html"
+                            ><i class="fas fa-arrow-circle-left fs-4 p-2"></i
+                            >página inicial</a
+                        >
                     </li>
                 </ul>
             </div>
         </nav>
         <main class="main-comtainer">
-            <!-- Conteudo central -->
+            <div class="div-container-ct">
+                <div class="box-container-ct">
+                    <div id="order-2" class=" location-container">
+                        <div id="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.9049378053173!2d-8.6528545234252!3d41.15842561016514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246582ddd59001%3A0x9ee3f032e812e1fd!2sR.%20de%20Cir%C3%ADaco%20Cardoso%20186%2C%204150-212%20Porto!5e0!3m2!1spt-PT!2spt!4v1732376098385!5m2!1spt-PT!2spt"
+                                width="600"
+                                height="450"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                sandbox="allow-same-origin allow-scripts"
+                            ></iframe>
+                        </div>
+                        <div id="adress-container">
+                            <div class="inf-adress">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <p>wildyschooll@wildyschooll.com</p>
+                            </div>
+                            <div class="inf-adress">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>R. de Ciríaco Cardoso 186, 4150-212 Porto</p>
+                            </div>
+
+                            <div class="inf-contact">
+                                <div><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <p>91177-1781</p>
+                                    <p>92427-9141</p>
+                                </div>
+                            </div>
+                            <div class="social-container">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram-square"></i>
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="order-1" class=" contact-container">
+                        <h1>Contacto para Eventos</h1>
+                        <form action="#">
+                            <div id="name"><input type="text" placeholder="Insira seu Nome" required /></div>
+                            <div id="email">
+                                <input type="email" placeholder="Insira seu Email" required />
+                            </div>
+                            <div id="telefone">
+                                <input type="text" placeholder="Insira seu Telefone"required />
+                            </div>
+                            <div>
+                                <textarea name="menssagem" id="text-area" cols="52" rows="10" placeholder="Insira sua Mensagem" required></textarea>
+                            </div>
+                            <div id="button-container">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer-container">
             <div id="img-footer">
@@ -84,9 +167,7 @@
                 <a class="footer-link" href="../pages/eventos.html"
                     >Eventos&nbsp; /</a
                 >
-                <a class="footer-link" href="#"
-                    >Contactos</a
-                >
+                <a class="footer-link" href="#">Contactos</a>
             </div>
             <div>
                 <p>
@@ -121,7 +202,7 @@
                 },
             });
         </script>
-        <!-- JS -->
+        <!-- JS Menu Hamburguer-->
         <script>
             document
                 .querySelector('.hamburger')

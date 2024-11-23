@@ -6,6 +6,7 @@
     --secondary-color: #6c4939;
     --tertiary-color: #915339;
     --button-color: #b55620;
+    --font: "Roboto", sans-serif;
 }
 
 /* Reset */
@@ -30,7 +31,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font)
 }
 
 /* NavBar */

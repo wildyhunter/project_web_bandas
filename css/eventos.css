@@ -22,6 +22,14 @@
     z-index: 0;
 }
 
+.link-container a{
+    height: 50px;
+}
+
+.link-container i{
+    padding: 0 5px;
+}
+
 /* Section Eventos */
 .evento-container {
     display: flex;
@@ -135,9 +143,21 @@
 #btn-comprar button {
     background-color: var(--button-color);
     color: white;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     border: none;
-    padding: 10px 5px;
     border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#btn-comprar button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    color: black;
+    border: 1px solid var(--button-color);
 }
 
 /* Mobile */
@@ -183,12 +203,26 @@
         font-size: 20px;
     }
     #btn-comprar {
-        padding: 20px 0;
+        margin: 20px 0 10px 0;
+        height: 100px!important;
     }
+
     #btn-comprar button {
+        background-color: var(--button-color);
+        color: white;
         width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    #btn-comprar button:hover {
+        transform: scale(1.1);
+        background-color: transparent;
+        color: black;
+        border: 1px solid var(--button-color);
     }
     .line-es {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
     }
 }
